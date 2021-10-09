@@ -6,8 +6,7 @@
         </article>
         <input type="button" value="fetch" onclick="
         fetch('css').then(function(response){
-            response.text().then(function(text){
-                document.querySelector('article').innerHTML = text;
+            console.log(response.text)
             })
         })
         ">
