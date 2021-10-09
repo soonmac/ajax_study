@@ -1,6 +1,11 @@
 <!doctype html>
 <html>
     <body>
-        <input type="button" value="fetch" onclick="alert('hi')">
+        <input type="button" value="fetch" onclick="
+        fetch('css').then(function(response){
+            response.text().then(function(text){alert(text);
+            })
+        })
+        ">
     </body>
 </html>
