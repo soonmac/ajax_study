@@ -37,7 +37,7 @@
           const items = text.split(',');
           let tags = '';
           items.forEach(item => {
-            item.item.trim();
+            item=item.trim();
             const tag =  `<li><a href="#!${item}" onclick="fetchPage('${item}')">${item}</a></li>`
             tags = tags + tag;
           });
